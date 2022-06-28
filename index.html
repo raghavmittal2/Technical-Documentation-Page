@@ -29,7 +29,7 @@
                 </div>
                 <div class="divider"></div>
                 <div class="sub-section">
-                    <header>What does CSS do</header>
+                    <h3 class="sub-heading">What does CSS do</h3>
                     <p>There are three major benefits of CSS: </p>
                     <ol>
                         <li>Solves a big problem
@@ -100,27 +100,107 @@
                         <pre>   #para1 {  
 <!--                -->    text-align: center;  
 <!--                -->    color: blue;  
-<!--                -->    }  
-                        </pre>
+<!--                -->    }
+<!--                --></pre>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <div class="sub-section">
+                    <h3>3) CSS Class Selector</h3>
+                    <p>The class selector selects HTML elements with a specific class attribute. It is used with a period character . (full stop symbol) followed by the class name.</p>
+                    <p>Let's take an example with a class "center".</p>
+                    <div class="code-block">
+                        <pre>   .center {  
+<!--                        -->    text-align: center;  
+<!--                        -->    color: blue;  
+<!--                        -->    }
+<!--                 --></pre>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <div class="sub-section">
+                    <h3 class="sub-heading">4) CSS Universal Selector</h3>
+                    <p>The universal selector is used as a wildcard character. It selects all the elements on the pages.</p>
+                    <div class="code-block">
+                        <pre>   * {  
+<!--                        -->    color: green;  
+<!--                        -->    font-size: 20px;  
+<!--                        -->    }
+<!--                 --></pre>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <div class="sub-section">
+                    <h3 class="sub-heading">5) CSS Group Selector</h3>
+                    <p>The grouping selector is used to select all the elements with the same style definitions.</p>
+                    <p>Grouping selector is used to minimize the code. Commas are used to separate each selector in grouping.</p>
+                    <p>Various elements can be grouped together to use a common style in the following way: </p>
+                    <div class="code-block">
+                        <pre>   h1,h2,p {  
+<!--                        -->    text-align: center;  
+<!--                        -->    color: blue;  
+<!--                        -->    }  
+<!--                --></pre>
                     </div>
                 </div>
             </section>
 
-            <section class="main-section">
-                <header></header>
-            </section>
+            <section id="how_to_add_css" class="main-section">
+                <div class="sub-section">
+                    <header>How to add CSS</header>
+                    <p>CSS is added to HTML pages to format the document according to information in the style sheet. There are three ways to insert CSS in HTML documents.</p>
+                    <ol>
+                        <li>Inline CSS</li>
+                        <li>Internal CSS</li>
+                        <li>External CSS</li>
+                    </ol>
+                </div>
+                <div class="divider"></div>  
+                <div class="sub-section">
+                    <h3 class="sub-heading">1) Inline CSS</h3>
+                    <p>Inline CSS is used to apply CSS on a single line or element.</p>
+                    <p>For example:</p>
+                    <div class="code-block">
+                        <pre>&lt;p style="color:blue"&gt;Hello CSS&lt;/p&gt;</pre>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <div class="sub-section">
+                    <h3 class="sub-heading">2) Internal CSS</h3>
+                    <p>Internal CSS is used to apply CSS on a single document or page. It can affect all the elements of the page. It is written inside the style tag within head section of html.</p>
+                    <p>For example:</p>
+                    <div class="code-block">
+                        <pre>&lt;style&gt;  
+<!--                      -->p{color:blue}  
+<!--                      -->&lt;/style&gt;  
+<!--                --></pre>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <div class="sub-section">
+                    <h3 class="sub-heading">3) External CSS</h3>
+                    <p>External CSS is used to apply CSS on multiple pages or all pages. Here, we write all the CSS code in a css file. Its extension must be .css for example style.css.</p>
+                    <p>For example:</p>
+                    <div class="code-block">
+                        <pre>p{color:blue}</pre>
+                    </div>
+                    <p>You need to link this style.css file to your html pages like this:</p>
+                    <div class="code-block">
+                        <pre>&lt;link rel="stylesheet" type="text/css" href="style.css"&gt;</pre>
+                    </div>
+                </div>  
         </main>
 
 
-        <section id="navigation-section">
-            <nav id="navbar">
-                <header>CSS Documentation</header>
-                <ul>
-                    <li class="topic"><a class="nav-link">Introduction</a></li>
-                    <li class="topic">Syntax</li>
-                    
-                </ul>
-            </nav>
-        </section>
+        <nav id="navbar">
+            <header id="main-title">CSS Documentation</header>
+            <ul>
+                <li class="topic"><a class="nav-link" href="#introduction">Introduction</a></li>
+                <li class="topic"><a class="nav-link" href="#what_is_css">What is CSS</a></li>
+                <li class="topic"><a class="nav-link" href="#css_syntax">CSS Syntax</a></li>
+                <li class="topic"><a class="nav-link" href="#css_selector">CSS Selector</a></li>
+                <li class="topic"><a class="nav-link" href="#how_to_add_css">How to add CSS</a></li>    
+            </ul>
+        </nav>
     </body>
 </html>

@@ -4,25 +4,31 @@ html {
 }
 
 body {
-    font-size: 1rem;
+    position: relative;
+    font-size: 1.2rem;
+    font-family: -apple-system-body, -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 header {
+    padding-top: 0.5em;
     font-weight: bold;
-    font-size: 1.6rem;
+    font-size: 2rem;
+    font-family: -apple-system-headline, -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 .main-section {
-    margin: 2.5em 0 2.5em 0;
+    margin: 1.5em 0 2em 350px;
 }
 
 .sub-section {
     margin: 0;
-    padding: 0.5em;
+    padding: 0 0.5em;
 }
 
 .code-block {
     width: 98%;
+    border-left: 0.7rem solid black;
+    border-radius: 10px;
     background-color: rgba(222, 213, 217, 0.884);
     margin-inline: auto;
     padding: 0.5em 0em 0.5em 1em;
@@ -33,9 +39,48 @@ header {
     width: 98%;
     height: 2px;
     background-color: rgba(222, 213, 217, 0.884);
-    margin: 0.5em auto 0.5em auto;
+    margin: 1em auto 1em auto;
 }
 
 .bold {
     font-weight: bold;
+}
+
+.sub-heading {
+    font-family: -apple-system-subheadline;
+    margin: 0;
+}
+
+.sub-section:not(header) {
+    /*padding-left: 10rem; */
+}
+
+#navbar {
+    width: 350px;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top : 0;
+    left: 0;
+    overflow-x: hidden;
+    border-right: 4px solid black;
+}
+
+#navbar header, #navbar>ul>li:not(:last-of-type) {
+    border-bottom: 2px solid black;
+}
+
+#navbar header {
+    padding: 1.75rem 0 1.75rem 1rem;
+}
+
+#navbar>ul>li {
+    padding: 1.5rem 0 1.5rem 1rem;
+    
+}
+
+#navbar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
