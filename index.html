@@ -9,15 +9,18 @@
     <body>
         <main id="main-doc">
             <section id="introduction" class="main-section">
-                <header>Introduction</header>
-                <p>CSS tutorial or CSS 3 tutorial provides basic and advanced concepts of CSS technology. Our CSS tutorial is developed for beginners and professionals. The major points of CSS are given below: </p>
-                <ul>
-                    <li>CSS stands for Cascading Style Sheet.</li>
-                    <li>CSS is used to design HTML tags.</li>
-                    <li>CSS is a widely used language on the web.</li>
-                    <li>HTML, CSS and JavaScript are used for web designing. It helps the web designers to apply style on HTML tags.</li>
-                </ul>
+                <div class="sub-section">
+                    <header>Introduction</header>
+                    <p>CSS tutorial or CSS 3 tutorial provides basic and advanced concepts of CSS technology. Our CSS tutorial is developed for beginners and professionals. The major points of CSS are given below: </p>
+                    <ul>
+                        <li>CSS stands for Cascading Style Sheet.</li>
+                        <li>CSS is used to design HTML tags.</li>
+                        <li>CSS is a widely used language on the web.</li>
+                        <li>HTML, CSS and JavaScript are used for web designing. It helps the web designers to apply style on HTML tags.</li>
+                    </ul>
+                </div>
             </section>
+
             <section id="what_is_css" class="main-section">
                 <div class="sub-section">
                     <header>What is CSS</header>
@@ -44,26 +47,65 @@
             </section>
 
             <section id="css_syntax" class="main-section">
-                <header>CSS Syntax</header>
-                <p>A CSS rule set contains a selector and a declaration block.</p>
-                <img src="media/css-syntax.png" alt="breakdown of CSS syntax">
-                <p><span class="bold">Selector: </span>Selector indicates the HTML element you want to style. It could be any tag like &lt;h1&gt; , &lt;title&gt; etc.</p>
-                <p><span class="bold">Declaration Block: </span>The declaration block can contain one or more declarations separated by a semicolon. For the above example, there are two declarations: </p>
-                <ol>
-                    <li>color: yellow;</li>
-                    <li>font-size: 11px;</li>
-                </ol>
-                <p>Each declaration contains a property name and value, separated by a colon.</p>
-                <p><span class="bold">Property: </span>A Property is a type of attribute of HTML element. It could be color, border etc.</p>
-                <p><span class="bold">value: </span>Values are assigned to CSS properties. In the above example, value "yellow" is assigned to color property.</p>
-                <div class="code-block">
-                    <p>Selector{Property1: value1; Property2: value2; ..........;}  </p>
+                <div class="sub-section">
+                    <header>CSS Syntax</header>
+                    <p>A CSS rule set contains a selector and a declaration block.</p>
+                    <img src="media/css-syntax.png" alt="breakdown of CSS syntax">
+                    <p><span class="bold">Selector: </span>Selector indicates the HTML element you want to style. It could be any tag like &lt;h1&gt; , &lt;title&gt; etc.</p>
+                    <p><span class="bold">Declaration Block: </span>The declaration block can contain one or more declarations separated by a semicolon. For the above example, there are two declarations: </p>
+                    <ol>
+                        <li>color: yellow;</li>
+                        <li>font-size: 11px;</li>
+                    </ol>
+                    <p>Each declaration contains a property name and value, separated by a colon.</p>
+                    <p><span class="bold">Property: </span>A Property is a type of attribute of HTML element. It could be color, border etc.</p>
+                    <p><span class="bold">value: </span>Values are assigned to CSS properties. In the above example, value "yellow" is assigned to color property.</p>
+                    <div class="code-block">
+                        <p>Selector{Property1: value1; Property2: value2; ..........;}  </p>
+                    </div>
                 </div>
             </section>
 
-            <section class="main-section">
-                <header></header>
+            <section id="css_selector" class="main-section">
+                <div class="sub-section">
+                    <header>CSS Selector</header>
+                    <p><span class="bold">CSS selectors</span> are used to select the content you want to style. Selectors are the part of CSS rule set. CSS selectors select HTML elements according to its id, class, type, attribute etc.</p>
+                    <p>There are several different types of selectors in CSS.</p>
+                    <ol>
+                        <li>CSS Element Selector</li>
+                        <li>CSS Id Selector</li>
+                        <li>CSS Class Selector</li>
+                        <li>CSS Universal Selector</li>
+                        <li>CSS Group Selector</li>
+                    </ol>
+                </div>
+                
+                <div class="sub-section">
+                    <h3 class="sub-heading">1) CSS Element Selector</h3>
+                    <p>The element selector selects the HTML element by name.</p>
+                    <div class="code-block">
+                    <pre>   p{  
+<!--            -->    text-align: center;  
+<!--            -->    color: blue;  
+<!--            -->    }</pre>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <div class="sub-section">
+                    <h3>2) CSS Id Selector</h3>
+                    <p>The id selector selects the id attribute of an HTML element to select a specific element. An id is always unique within the page so it is chosen to select a single, unique element.</p>
+                    <p>It is written with the hash character (#), followed by the id of the element.</p>
+                    <p>Let's take an example with the id "para1".</p>
+                    <div class="code-block">
+                        <pre>   #para1 {  
+<!--                -->    text-align: center;  
+<!--                -->    color: blue;  
+<!--                -->    }  
+                        </pre>
+                    </div>
+                </div>
             </section>
+
             <section class="main-section">
                 <header></header>
             </section>
@@ -72,7 +114,7 @@
 
         <section id="navigation-section">
             <nav id="navbar">
-                <header>CSS Documentation<header>
+                <header>CSS Documentation</header>
                 <ul>
                     <li class="topic"><a class="nav-link">Introduction</a></li>
                     <li class="topic">Syntax</li>
